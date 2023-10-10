@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/e0961d52a4.js" crossorigin="anonymous"></script>
+</head>
+<body class="site-title">
+    <div class="inner">
+        <div id="mobileNav" class="">
+            <div id="mobileNavWrapper" class="wrapper">
+                <nav class="main-nav mobileNav">
+                    <ul> 
+                        <li class=" active-link"> 
+                              <a href="index.html">Home</a>  
+                        </li>  
+                        <li > 
+                              <a href="projects.html">Projects</a> 
+                        </li> 
+
+                        <li > 
+                              <a href="about.html">About</a> 
+                        </li> 
+                    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="mobileMenuLink">
+            <a>Menu</a></div>
+        <script>
+            var obox = document.getElementById("mobileMenuLink"); 
+            var odown = document.getElementById("mobileNav"); 
+            var timer;
+            var i; 
+            obox.onclick = function () {
+                if (i == 1) {
+                    i = 0;
+                    clearInterval(timer); 
+
+                    timer = setInterval(function () {
+                        odown.style.height = "0px";
+                    }, 100)
+                }
+                else {
+                    i = 1;
+                    clearInterval(timer);  
+                    timer = setInterval(function () {
+                        odown.style.height = "306px"; 
+                    }, 100)
+                }
+            }
+        </script>
+        <header id="header">
+            <div id="logo"> 
+              <h1 class="logo" style="letter-spacing: 0.0238095em;"><a href="index.html">Hi, I'm Xinyi!</a></h1> 
+            </div> 
+            <div id="topNav" >
+                <nav class="main-nav">
+                  <ul> 
+      <li class=" active-link"> 
+            <a href="index.html">Home</a>  
+      </li>  
+      <li > 
+            <a href="projects.html">Projects</a> 
+      </li> 
+
+      <li > 
+            <a href="about.html">About</a> 
+      </li> 
+  
+  </ul>
+                </nav>
+            </div> 
+        </header>
+        <div class="page-header">
+            <h1 style="text-align: center;">
+                welcome!</h1>
+        </div>
+        <div id="page">
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="about">
+                <div class="about-pic">
+                    <img src="images/homepage.jpg" />
+                </div>
+                <div class="about-html">
+                    <p>
+                        Hi!
+                    </p>
+                    <p>
+                        My name is Xinyi Zhang, and I am pursing my master degree in Master of Professional Computer Science (MPCS) at Simon Fraser 
+                        University. I recently graduated from Purdue University in Computer Science, and I am particular interested in data analyzing
+                        and building Apps fulfill my personal requirements. Besides these topics, I also enjoy spending time with my cat, watching 
+                        movies and hanging out with my friends in the free time. 
+                    </p>
+                    <p>
+                        In this Github Page, I not only want to show my projects and experiences, but also share something interesting about my life.</p>
+                    <p>
+                        Hope you can enjoy!</p>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="list">
+                <ul>
+
+                    <li>
+                        <div class="img">
+                            <img src="" />
+                        </div>
+                        <div class="title">
+                            <p>
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <a href=""></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img">
+                            <img src="images/proj.png" />
+                        </div>
+                        <div class="title">
+                            <p>
+                                Projects</p>
+                        </div>
+
+                        <div class="view">
+                            <a href="projects.html">View</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img">
+                            <img src="images/about_me.jpg" />
+                        </div>
+                        <div class="title">
+                            <p>
+                                about me</p>
+                        </div>
+
+                        <div class="view">
+                            <a href="about.html">View</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img">
+                            <img src="" />
+                        </div>
+                        <div class="title">
+                            <p>
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <a href=""></a>
+                        </div>
+                    </li>
+
+            <div class="hr">
+                <hr>
+            </div>
+        </div>
+        <footer id="footer"> 
+<div class="fl">
+  <p style="white-space:pre-wrap;">Xinyi Zhang</p>
+</div> 
+    <div id="socialLinks" class="fr" >
+
+        </a><a href="https://github.com/xinyi-zhang-3652">
+            <i aria-hidden="true" class="fa-brands fa-github"></i>
+        </a><a href="https://www.linkedin.com/in/xinyi-zhang-purdue/">
+            <i aria-hidden="true" class="fa-brands fa-linkedin"></i>
+        </a><a href="mailto:xza313@sfu.ca">
+            <i aria-hidden="true" class="fa-regular fa-envelope"></i>
+        
+    </div>
+    </footer>
+    </div>
+</body>
+</html>
