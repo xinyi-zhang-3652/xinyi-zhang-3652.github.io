@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/e0961d52a4.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="images/cat_icon.png">
+</head>
+<body class="site-title">
+    <div class="inner">
+        <div id="mobileNav" class="">
+            <div id="mobileNavWrapper" class="wrapper">
+                <nav class="main-nav mobileNav">
+                    <ul> 
+                        <li> 
+                              <a href="index.html">Home</a>  
+                        </li>  
+                        <li> 
+                              <a href="projects.html">Projects</a> 
+                        </li> 
+                        <li > 
+                            <a href="work.html">Work</a> 
+                        </li> 
+                        <li > 
+                              <a href="post.html">Post</a> 
+                        </li> 
+                    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="mobileMenuLink">
+            <a>Menu</a></div>
+        <script> 
+            var obox = document.getElementById("mobileMenuLink"); 
+            var odown = document.getElementById("mobileNav"); 
+            var timer;
+            var i; 
+            obox.onclick = function () {
+                if (i == 1) {
+                    i = 0;
+                    clearInterval(timer); 
+
+                    timer = setInterval(function () {
+                        odown.style.height = "0px";
+                    }, 100)
+                }
+                else {
+                    i = 1;
+                    clearInterval(timer); 
+                    timer = setInterval(function () {
+                        odown.style.height = "306px"; 
+                    }, 100)
+                }
+            }
+        </script>
+        <header id="header">
+            <div id="logo"> 
+              <h1 class="logo" style="letter-spacing: 0.0238095em;"><a href="index.html">Hi, I'm Xinyi!</a></h1> 
+            </div> 
+            <div id="topNav" >
+                <nav class="main-nav">
+                  <ul> 
+      <li > 
+            <a href="index.html">Home</a>  
+      </li>  
+      <li> 
+            <a href="projects.html">Projects</a> 
+      </li> 
+      <li > 
+        <a href="work.html">Work</a> 
+    </li> 
+      <li  class=" active-link"> 
+            <a href="post.html">Post</a> 
+      </li> 
+  
+  </ul>
+                </nav>
+            </div> 
+        </header>
+        <div class="page-header">
+
+        </div>
+        <div id="page">
+            <div class="hr">
+                <hr>
+            </div>
+                <div class="about">
+                    <div class="aboutl">
+                        <img src="images/post.jpg" />
+                    </div>
+                    <div class="aboutr">
+                        <div class="html-content">
+                    </div>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+        </div>
+    <footer id="footer"> 
+        <div class="fl">
+            <p style="white-space:pre-wrap;">Xinyi Zhang</p>
+        </div> 
+        <div id="socialLinks" class="fr" >
+            </a><a href="https://github.com/xinyi-zhang-3652">
+                <i aria-hidden="true" class="fa-brands fa-github"></i>
+            </a><a href="https://www.linkedin.com/in/xinyi-zhang-purdue/">
+                <i aria-hidden="true" class="fa-brands fa-linkedin"></i>
+            </a><a href="mailto:xza313@sfu.ca">
+                <i aria-hidden="true" class="fa-regular fa-envelope"></i>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
